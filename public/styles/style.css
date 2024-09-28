@@ -86,29 +86,30 @@ body {
 .banner .container span {
     font-weight: 700;
 }
+
 /* SOCIAL BANNER */
-.social{
+.social {
     background-color: #e5e5e5;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-.social .container .boxes{
- display: flex;
- justify-content: space-between;
- width: 100%;
- padding: 30px 0;
+.social .container .boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0;
 }
 
-.box{
+.box {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.box img{
+.box img {
     width: 170px;
 }
 
@@ -117,12 +118,12 @@ body {
 .footer {
     background-color: #32b9cd;
     height: var(--tamanho-footer);
-    color:beige;
+    color: beige;
     display: flex;
     font-size: 15px;
 }
 
-.footer .container{
+.footer .container {
     justify-content: center;
     align-items: center;
 }
@@ -130,3 +131,83 @@ body {
 .version {
     font-size: 12px;
 }
+
+.formulario {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+    padding: 0 4% 4% 4% ;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.login {
+
+    display: flex;
+    height: var(--tamanho-banner);
+    background-image: url(../assets/imgs/bg-jelly-fish-para_outras_pags.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+
+    display: flex;
+    border: rgb(255, 255, 255) 1px solid;
+    background-color: rgb(255, 255, 255);
+    border-radius: 13px;
+    padding: 2px;
+    width: 50%;
+    height: 50%;
+    flex-direction: column;
+    align-items: center;
+    color: #d885d1;
+    font-weight: 800;
+
+}
+
+.card h2{
+    font-size: 40px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.login .container {
+
+    display: flex;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.botao {
+    align-items: center;
+    width: 16%;
+    height: 10%;
+    background-color: #83153f;
+    border-radius: 5px;
+    height: 15%;
+    border: #83153f 1px solid;
+    color: white;
+
+}
+
+input{
+    border: #45a6e7 3px solid;
+    border-radius: 6px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
