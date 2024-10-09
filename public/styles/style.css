@@ -101,11 +101,18 @@ body {
 
 }
 
+.social .container{
+
+    display: flex;
+    justify-content: center;
+}
+
+
 .social .container .boxes {
   display: flex;
   justify-content: space-between;
-  width: 150%;
-  padding: 120px;
+  width: 60%;
+  padding: 30px;
   flex-direction: column;
   text-align: center;
 }
