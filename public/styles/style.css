@@ -1,239 +1,244 @@
 /* Adicionar aqui toda a estilização criada para sua aplicação. */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Barlow', sans-serif;
-    background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+  background-color: black;
 }
 
 :root {
-    --tamanho-header: 80px;
-    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-footer: 65px;
+  --tamanho-header: 40px;
+  --tamanho-banner: calc(
+    50vh - var(--tamanho-header) - var(--tamanho-footer) - 2px
+  );
+  --tamanho-login: calc(
+    100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px
+  );
+  --tamanho-footer: 65px;
 }
 
 /* HEADER */
 
 .header {
-    height: var(--tamanho-header);
-    border-bottom: 2px solid #32b9cd;
-
+  height: var(--tamanho-header);
+  border-bottom: 2px solid #32b9cd;
 }
 
 .container {
-    display: flex;
-    width: 80%;
-    margin: auto;
+  display: flex;
+  width: 80%;
+  margin: auto;
 }
 
-.header .container {
 
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
+
+.header .container {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .header a {
-    text-decoration: none;
-    color: #e3b062;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .agora {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .navbar {
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    color: #e3b062;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  color: #e3b062;
 }
 
 .titulo {
-    color: #32b9cd;
-    width: fit-content;
-    font-weight: 800;
+  color: #32b9cd;
+  width: fit-content;
+  font-weight: 800;
 }
 
 /* BANNER */
 
 .banner {
-    height: var(--tamanho-banner);
-    color: white;
-    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
-    background-size: cover;
+  height: var(--tamanho-banner);
+  color: white;
+  background-image: url("../assets/imgs/bg-jelly-fish-para-home.png");
+  background-size: cover;
 }
 
 .banner .container {
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .banner .container p {
-    width: 50%;
-    margin: 0;
-    padding: 0;
-    font-size: 36px;
-
+  width: 60%;
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
 }
 
 .banner .container span {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 /* SOCIAL BANNER */
 .social {
-    background-color: #e5e5e5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: space;
+  align-items: center;
+  
+  height: 130vh;
 
 }
 
 .social .container .boxes {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 150%;
+  padding: 120px;
+  flex-direction: column;
+  text-align: center;
 }
 
 .box {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 20%;
+  padding: 30;
+}
+.teste{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
-
 .box img {
-    width: 170px;
+  display: flex;
+  width: 170px;
 }
 
 /* FOOTER */
 
 .footer {
-    background-color: #32b9cd;
-    height: var(--tamanho-footer);
-    color: beige;
-    display: flex;
-    font-size: 15px;
+  background-color: #32b9cd;
+  height: var(--tamanho-footer);
+  color: beige;
+  display: flex;
+  font-size: 15px;
 }
 
 .footer .container {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .version {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .formulario {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    height: 70%;
-    padding: 0 4% 4% 4%;
-    flex-direction: column;
-    justify-content: space-between;
-
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 70%;
+  padding: 0 4% 4% 4%;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .login {
-
-    display: flex;
-    height: var(--tamanho-banner);
-    background-image: url(../assets/imgs/bg-jelly-fish-para_outras_pags.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  height: var(--tamanho-banner);
+  background-image: url(../assets/imgs/bg-jelly-fish-para_outras_pags.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-
-    display: flex;
-    border: rgb(255, 255, 255) 1px solid;
-    background-color: rgb(255, 255, 255);
-    border-radius: 13px;
-    padding: 2px;
-    width: 50%;
-    height: 50%;
-    flex-direction: column;
-    align-items: center;
-    color: #d885d1;
-    font-weight: 800;
+  display: flex;
+  border: rgb(255, 255, 255) 1px solid;
+  background-color: rgb(255, 255, 255);
+  border-radius: 13px;
+  padding: 2px;
+  width: 50%;
+  height: 50%;
+  flex-direction: column;
+  align-items: center;
+  color: #d885d1;
+  font-weight: 800;
 }
 
 .card-cadastro {
-    display: flex;
-    border: rgb(255, 255, 255) 1px solid;
-    background-color: rgb(255, 255, 255);
-    border-radius: 13px;
-    padding: 2px;
-    width: 50%;
-    height: 70%;
-    flex-direction: column;
-    align-items: center;
-    color: #d885d1;
-    font-weight: 800;
+  display: flex;
+  border: rgb(255, 255, 255) 1px solid;
+  background-color: rgb(255, 255, 255);
+  border-radius: 13px;
+  padding: 2px;
+  width: 50%;
+  height: 70%;
+  flex-direction: column;
+  align-items: center;
+  color: #d885d1;
+  font-weight: 800;
 }
 
 .card h2 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .campo {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    width: 100%;
+  width: 100%;
 }
 
 .login .container {
-
-    display: flex;
-    height: 75vh;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  height: 75vh;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
-    align-items: center;
-    width: 16%;
-    height: 10%;
-    background-color: #83153f;
-    border-radius: 5px;
-    height: 15%;
-    border: #83153f 1px solid;
-    color: white;
+  align-items: center;
+  width: 16%;
+  height: 10%;
+  background-color: #83153f;
+  border-radius: 5px;
+  height: 15%;
+  border: #83153f 1px solid;
+  color: white;
 }
 
 .card-cadastro h2 {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
-.formulario .botao{
- height: 10%;
+.formulario .botao {
+  height: 10%;
 }
-
 
 input {
-    border: #45a6e7 3px solid;
-    border-radius: 6px;
-    width: 100%;
-    height: 30px;
-    text-align: center;
+  border: #45a6e7 3px solid;
+  border-radius: 6px;
+  width: 100%;
+  height: 30px;
+  text-align: center;
 }
 
 .card-cadastro .formulario {
-    height: 100%;
-    
+  height: 100%;
 }
